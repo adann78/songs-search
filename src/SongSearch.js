@@ -35,7 +35,12 @@ const SongSearch=()=>{
   },[search]);
 
   const handleSearch=(data)=>{
-    console.log(data)
+    let atributos = Object.keys(data);
+    console.log(atributos);
+    atributos.forEach((atributo) => {
+      console.log('Atributo:', atributo, ' - Valor:', data[atributo]);
+  });
+    //console.log(data)
     setSearch(data)
   }
 return(
